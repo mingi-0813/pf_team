@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: url(../img/cursor_auto.png) 2 2,auto;}
+html{font-size: 62.5%; scroll-behavior: smooth;} /* 10px */
+table { border-collapse: collapse; width: 100%; }
+ol, ul { list-style: none; }
+a { color: #333; text-decoration: none; cursor: url(../img/cursor_pointer.png) 2 2,pointer;}
+a:active{cursor: url(../img/cursor_click.png) 2 2,auto;}
+address,em { font-style: normal; }
+caption,legend { display: none; }
+select,input,fieldset { border: 0; }
+
+

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀프로1</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/pavicon.svg" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- web icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- opening -->
+    <div class="opening">
+        <div class="bar">
+            <div class="loadong_com">
+                <img src="img/loading_computer.png" alt="">
+            </div>
+            <div class="bar_txt">
+                <div class="bar_txt1">
+                    <p>LOADING..</p>
+                    <p><span class="counting" data-count="100">0</span><i>%</i></p>
+                </div>
+                <div class="bar_txt2">
+                    <p>COMPLETE</p>
+                </div>
+            </div>
+            <div class="loading_bar_img">
+                <div class="loading_bar_img1">
+                    <img src="img/loadingbar.png" alt="로딩바">
+                    <div class="loading_gauge"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_top">
+                <h1><a href="#">Village Quest</a></h1>
+            </div>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="index.html#main_visual"><img src="img/gnb_about.png" alt="">About</a></li>
+                    <li><a href="index.html#review"><img src="img/gnb_review.png" alt="">Review</a></li>
+                    <li><a href="index.html#horizontal"><img src="img/gnb_team.png" alt="">Our Team</a></li>
+                    <li><a href="index.html#popup"><img src="img/gnb_play.png" alt="">Ready</a></li>
+                </ul><!-- gnb -->
+            </nav>
+        </header><!-- header -->
+        <main id="main">
+            <section id="main_visual">
+                <div id="intro">
+                    <div class="pc_wrap">
+                        <img src="img/intro.png" alt="">
+                    </div>
+                </div>
+                <section id="win_95">
+                    <div class="inner">
+                        <ul class="tab_icon">
+                            <li class="icon_story"><img src="img/s2_story_icon.png" alt="책 아이콘">
+                                <p>Story</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                            <li class="icon_keys"><img src="img/s2_keys_icon.png" alt="책 아이콘">
+                                <p>keys</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                            <li class="icon_mystery"><img src="img/s2_mystery_icon.png" alt="돋보기 아이콘">
+                                <p>Mystery</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                            <li class="icon_who"><img src="img/s2_who_icon.png" alt="사람 아이콘">
+                                <p>Who</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                            <li class="icon_video"><img src="img/s2_video_icon.png" alt="카메라 아이콘">
+                                <p>Video</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="tab_window">
+                            <li><img src="img/s2_window_story.png" alt="스토리 윈도우창">
+                                <div class="btn_close"></div>
+                            </li>
+                            <li><img src="img/s2_window_keys.png" alt="키 윈도우창">
+                                <div class="btn_close"></div>
+                            </li>
+                            <li><img src="img/s2_window_mystery.png" alt="미스터리 윈도우창">
+                                <div class="btn_close"></div>
+                                <div class="video">
+                                    <video id="video_stop" src="img/window_mystery_video.mp4" muted loop autoplay
+                                        controls playsinline></video>
+                                </div>
+                            </li>
+                            <li><img src="img/s2_window_who.png" alt="후 윈도우창">
+                                <div class="btn_close"></div>
+                                <div class="video">
+                                    <video id="video_stop" src="img/window_who_video.mp4" muted loop autoplay controls
+                                        playsinline></video>
+                                </div>
+                            </li>
+                            <li><img src="img/s2_window_video.png" alt="클립 윈도우창">
+                                <div class="btn_close">
+                                </div>
+                                <div class="video">
+                                    <video id="video_stop" src="img/window_movie_video.mp4" muted loop autoplay controls
+                                        playsinline></video>
+                                </div>
+                            </li>
+                            <li class="on">
+                                <div class="window2">
+                                    <img src="img/s2_window_guide.png" alt="가이드 윈도우창">
+                                    <div class="btn_close"></div>
+                                    <div class="btn_close2"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="window2">
+                                    <img src="img/s2_window_folder.png" alt="폴더 윈도우창">
+                                    <div class="btn_close"></div>
+                                    <div class="btn_close2"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="tab_icon icon2">
+                            <li class="icon_how"><img src="img/howhomepage_icon.png" alt="카메라 아이콘">
+                                <p>홈페이지<br>
+                                    즐기는방법</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                            <li class="icon_folder"><img src="img/folder_icon.png" alt="카메라 아이콘">
+                                <p>새 폴더</p>
+                                <div class="icon_hover"><img src="img/icon_hover.png" alt="">
+                                    <span>Click!</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scroll_down">
+                        <p>scroll</p>
+                        <img src="img/arrow.png" alt="">
+                    </div>
+                </section>
+            </section>
+            <div class="scroll-text">
+                <div class="track">
+                    <p>Are you ready to start the journey?<span>Let's go!</span></p>
+                    <p>Are you ready to start the journey?<span>Let's go!</span></p>
+                    <p>Are you ready to start the journey?<span>Let's go!</span></p>
+                    <p>Are you ready to start the journey?<span>Let's go!</span></p>
+                </div>
+            </div>
+            <div class="line">
+                <img src="img/storysectionline.png" alt="">
+            </div>
+            <section id="review">
+                <div class="inner">
+                    <div class="partycle">
+                        <img src="img/partycle.png" alt="">
+                        <img src="img/partycle.png" alt="">
+                    </div>
+                    <div class="h2_tit">
+                        <h2>리뷰로<br>
+                            증명된 재미</h2>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/arrow.png" alt="">
+                    </div>
+                    <div class="review_pin">
+                        <div class="review_tit">
+                            <p>다양하고 솔직한 후기에서<br>
+                                게임의 진짜 <span>재미</span>를 엿보고,<br>
+                                마을의 평화를 지키는 여정을 시작하세요.</p>
+                        </div>
+                        <div class="review_chat">
+                            <div class="partycle1">
+                                <img src="img/partycle_pin.png" alt="">
+                                <img src="img/partycle_pin.png" alt="">
+                                <img src="img/partycle_pin.png" alt="">
+                            </div>
+                            <img src="img/review_chat.png" alt="">
+                            <div class="chat_log">
+                                <dl class="chat1">
+                                    <dt>[8/26 03:21]<span>bitct507:</span></dt>
+                                    <dd>스토리 진행이 매끄러워</dd>
+                                </dl>
+                                <dl class="chat2">
+                                    <dt>[8/26 03:25]<span>abspsy02:</span></dt>
+                                    <dd>시간이 금방 가서 너무 좋아 !!!</dd>
+                                </dl>
+                                <dl class="chat3">
+                                    <dt>[8/26 03:25]<span>dooit6:</span></dt>
+                                    <dd>이 게임 덕분에 추억 여행 제대로 했습니다.</dd>
+                                </dl>
+                                <dl class="chat4">
+                                    <dt>[8/26 03:25]<span>qksod07:</span></dt>
+                                    <dd>중간에 플레이하다 놀랬어요 ㅋㅋ</dd>
+                                </dl>
+                                <dl class="chat5">
+                                    <dt>[8/26 03:25]<span>gohome1:</span></dt>
+                                    <dd>집에 가고 싶어졌어요.</dd>
+                                </dl>
+                                <dl class="chat6">
+                                    <dt>[8/26 03:25]<span>yeonjuya:</span></dt>
+                                    <dd>저 믿어보시고 해보세요!</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="horizontal">
+                <section id="introduce" class="parallax_item">
+                    <div class="intrd_tit">
+                        <p class="intit1">Hello World!</p>
+                        <p class="intit2"><span>Introduce</span> Our Team</p>
+                        <img src="img/smile.png" alt="스마일">
+                    </div>
+                    <img src="img/intrd_partycle1.png" alt="">
+                    <img src="img/intrd_partycle2.png" alt="">
+                    <img src="img/intrd_partycle2.png" alt="">
+                    <img src="img/intrd_partycle.png" alt="">
+                    <img src="img/intrd_partycle1.png" alt="">
+                    <img src="img/intrd_partycle1.png" alt="">
+                    <img src="img/intrd_partycle.png" alt="">
+                    <img src="img/intrd_partycle2.png" alt="">
+                    <div id="intrd_team">
+                        <img src="img/intrd_team.png" alt="">
+                    </div>
+                    <div id="pursue">
+                        <div class="folder">
+                            <ul class="pur_web purslide">
+                                <li>
+                                    <p>WEB</p>
+                                    <div class="imgbox"><img src="img/pursue_plus.png" alt=""></div>
+                                </li>
+                                <ul class="pur_web_depth">
+                                    <li>
+                                        <p>웹사이트에 숨어있는 재미, <br>
+                                            우리는 클릭을 기다리고 있어요!</p>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="pur_zep purslide">
+                                <li>
+                                    <p>ZEP</p>
+                                    <div class="imgbox"><img src="img/pursue_plus.png" alt=""></div>
+                                </li>
+                                <ul class="pur_zep_depth">
+                                    <li>
+                                        <p>숨겨진 비밀을 찾아가는 여정, <br>
+                                            지금 함께 떠나요!</p>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="team">
+                        <div class="webzep">
+                            <dl class="intrd_web">
+                                <p>WEB</p>
+                                <dt>PUBLISHING <span>장민기</span></dt>
+                                <dd>웹사이트 및 반응형 구현</dd>
+                                <dd>자바스크립트 동작 구현</dd>
+                                <dt>WEB DESIGN<span>정연주</span></dt>
+                                <dd>웹 기획</dd>
+                                <dd>웹사이트 및 반응형 디자인</dd>
+                            </dl>
+                            <dl class="intrd_zep">
+                                <p>ZEP</p>
+                                <dt>STORY CREATOR<span>진정진</span></dt>
+                                <dd>스토리 보드 작업</dd>
+                                <dt>CHARACTER DESIGN <span>이가인</span></dt>
+                                <dd>캐릭터 디자인</dd>
+                                <dt>MAP DESIGN <span>박지윤</span></dt>
+                                <dd>맵 디자인</dd>
+                                <dt>VIDEO PRODUCTION<span>권수진</span></dt>
+                                <dd>비디오 제작</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section id="empty" class="parallax_item">
+                </section>
+            </div>
+            <section id="introduce2">
+                <div class="partycle2">
+                    <img src="img/partycle2.png" alt="">
+                    <img src="img/partycle2.png" alt="">
+                    <img src="img/partycle2.png" alt="">
+                </div>
+                <div class="inner">
+                    <div class="com">
+                        <img src="img/768intrd_com.png" alt="">
+                    </div>
+                    <div class="intrd2_txt">
+                        <p>Hello World!</p>
+                        <p>Introduce</p>
+                        <p>Our team</p>
+                    </div>
+                    <div class="intrd2_team">
+                        <img src="img/768intrd_team.png" alt="">
+                    </div>
+                    <div class="swiper card">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <dl class="intrd_web">
+                                    <p>WEB</p>
+                                    <dt>PUBLISHING <span>장민기</span></dt>
+                                    <dd>웹사이트 및 반응형 구현</dd>
+                                    <dd>자바스크립트 동작 구현</dd>
+                                    <dt>WEB DESIGN<span>정연주</span></dt>
+                                    <dd>웹 기획</dd>
+                                    <dd>웹사이트 및 반응형 디자인</dd>
+                                </dl>
+                            </li>
+                            <li class="swiper-slide">
+                                <dl class="intrd_zep">
+                                    <p>ZEP</p>
+                                    <dt>STORY CREATOR<span>진정진</span></dt>
+                                    <dd>스토리 보드 작업</dd>
+                                    <dt>CHARACTER DESIGN <span>이가인</span></dt>
+                                    <dd>캐릭터 디자인</dd>
+                                    <dt>MAP DESIGN <span>박지윤</span></dt>
+                                    <dd>맵 디자인</dd>
+                                    <dt>VIDEO PRODUCTION<span>권수진</span></dt>
+                                    <dd>비디오 제작</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="popup">
+                <div class="inner">
+                    <div class="popup_wrap">
+                        <div class="popup_img">
+                            <img src="img/popup_window.png" alt="">
+                            <div class="image-container">
+                                <div id="addImagesBtn">
+                                </div>
+                                <a href="https://zep.us/play/8r6PkO"></a>
+                            </div> <!-- 이미지를 추가할 컨테이너 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="txt_visual">
+                <div class="inner">
+                    <div class="txt_readyset">
+                        <p>Ready, <br>
+                            Set,</p>
+                    </div>
+                    <div class="finger">
+                        <img src="img/visual_txt_finger.png" alt="">
+                    </div>
+                    <p class="txt_play">Play!</p>
+                </div>
+            </section>
+
+        </main>
+        <footer id="footer">
+            <div class="copy_wrap">
+                <div class="copy">
+                    <a href="#">&copy;2024 Village Quest. All rights reserved</a>
+                </div>
+            </div>
+            <div class="content_wrap">
+                <div class="content">
+                    <a href="">CONTANT</a>
+                </div>
+            </div>
+        </footer><!-- footer -->
+        <div class="btn_goplay">
+            <img src="img/icon_play.png" alt="">
+            <div class="play_border">
+                <div class="play_border1">
+                    <a href="https://zep.us/play/8r6PkO" target="_blank">play</a>
+                </div>
+            </div>
+            <div class="bor"></div>
+        </div>
+    </div><!-- wrap -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+
+
+    <script>
+        AOS.init();
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(Draggable)
+
+            Draggable.create(".tab_icon > li", {
+                bounds: "#main_visual",
+                inertia: true
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

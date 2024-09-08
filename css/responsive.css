@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+@media(max-width:1600px){
+    #header{z-index: 5;}
+    #intro{z-index: 0; opacity: 0; display: none;}
+    #review {text-align: center; display: flex; flex-direction: column; text-align: center; align-items: center;}
+    #review .h2_tit h2{transform: none;}
+    #review .arrow{transform: none;}
+    #review .arrow img{transform: rotate(45deg);}
+    #review .review_tit {transform: none;}
+    #review .review_chat {transform: none; width: 100p;}
+    #review .review_chat > img{width: 100%;}
+    #review .review_chat .chat_log{left: 3%; top: 17%;}
+    #review .review_chat .chat_log dl{font-size: 1.8rem;}
+    #review .partycle1 img:nth-child(1){left: 100%; top: 20px;}
+    #review .partycle1 img:nth-child(2){left: -20%; top: 300px;}
+    #review .partycle1 img:nth-child(3){left: 5%; top: -60px;}
+    #team{left: 70%;}
+
+    #txt_visual .txt_readyset{font-size: 18rem;}
+    #txt_visual .finger{right: -150px;}
+    #txt_visual .txt_play{font-size: 22rem;}
+
+    
+
+}
+
+@media(max-width:1400px){
+#review .partycle img{transform: scale(0.8,0.8);}
+    #intrd_team{left: 37%;}
+    
+    #pursue{left: 40%;}
+
+
+#txt_visual .txt_play{font-size: 20rem;}
+#txt_visual .txt_readyset{font-size: 16rem;}
+    #txt_visual .finger{right: -200px; top: 80px;}
+
+}
+
+
+@media(max-width:1200px){
+
+    
+
+    #introduce .intrd_tit {left: 12%; font-size: 18rem;}
+
+    #intrd_team{left: 30%;}
+    #review .review_chat {transform: none; min-width: 600px;}
+
+
+    #pursue{left: 33%;}
+
+
+    #team{left: 52%;}
+    #team .webzep{top: 40%;}
+    #txt_visual .txt_readyset{font-size: 14rem;}
+    #txt_visual .finger{right: -250px; top: 60px;}
+    #txt_visual .txt_play{font-size: 18rem;}
+}
+
+@media(max-width:1000px){
+
+
+    #team .webzep p{padding-bottom: 15px;}
+    #team .webzep .intrd_web{width: calc(350px * 0.9); height: calc(420px * 0.9);}
+    #team .webzep .intrd_zep{width: calc(380px * 0.9); height: calc(520px * 0.9);}
+    #team .webzep .intrd_web dd:nth-of-type(2) {padding-bottom: 25px;}
+    #team .webzep .intrd_zep dd {padding-bottom: 20px;}
+    #txt_visual .txt_readyset{font-size: 12rem;}
+    #txt_visual .finger{right: -300px; top: 40px;}
+    #txt_visual .txt_play{font-size: 16rem;}
+
+}
+@media(max-width:900px){
+
+
+
+#introduce .intrd_tit {left: 12%; font-size: 16rem;}
+    #team{left: 48%;}
+#introduce .intrd_tit img{top: 20%;}
+}
+
+@media(max-width:768px){
+    section{padding: 150px 0;}
+    .inner{padding: 0 10%;}
+
+    #header .gnb li a{font-size: 1.8rem;}
+
+    #main_visual .tab_icon{width: 100%; display:flex; justify-content: space-between; order: 1;}
+    #main_visual .tab_window{width: 100%; order: 3; padding-top: 20px;}
+    #main_visual .tab_window li img{max-width: 450px;}
+    #main_visual .icon2{width: 100%; order: 2;}
+    .scroll_down{bottom: 5%;}
+    #review{padding: 100px 0;}
+    #review .h2_tit h2{font-size: 5rem;}
+    #review .review_chat {min-width: 520px;}
+    
+    #review .review_chat .chat_log dl{font-size: 1.4rem; padding-bottom: 10px; text-align: left;}
+    #review .review_chat .chat_log dl dt{font-size: 1.6rem;}
+    #review .review_chat .chat_log dl dd{line-height: 2;}
+    #review .review_chat .chat_log dl dt span{font-size: 1.8rem;}
+    #horizontal{display: none;}
+    #introduce {display: none;}
+    #introduce2{display: block; opacity: 1;}
+
+
+    #popup .popup_wrap .popup_img img{ min-width: 350px;}
+    #txt_visual .txt_readyset{font-size: 10rem;}
+    #txt_visual .finger{right: -350px; top: 0px;transform: scale(0.8,0.8);}
+    #txt_visual .txt_play{font-size: 14rem;}
+    #txt_visual .txtimg{transform: scale(0.5,0.5);}
+}
+
+@media(max-width:620px){
+    #review .review_chat {min-width: 400px;}
+    
+    #review .review_chat .chat_log dl{font-size: 1.2rem; padding-bottom: 10px; text-align: left;}
+    #review .review_chat .chat_log dl dt{font-size: 1.4rem;}
+    #review .review_chat .chat_log dl dd{line-height: 2;}
+    #review .review_chat .chat_log dl dt span{font-size: 1.6rem;}
+    .com{transform: scale(0.9,0.9);}
+    .intrd2_txt p{font-size: 6rem;}
+    .intrd2_txt p:nth-child(1)::before{transform: scale(0.85,0.85); top: -5px;}
+    .intrd2_txt p:nth-child(3)::before{transform: scale(0.85,0.85); top: -5px;}
+
+    .card dl p{font-size: 4rem; padding-bottom: 3px;}
+    .card dl dt{font-size: 1.6rem; padding-bottom: 10px;}
+    .card dl dd{font-size: 1.4rem;}
+
+    .intrd_zep{padding: 40px;}
+    .card .intrd_zep dt{font-size: 1.6rem; padding-bottom: 3px;}
+    .card .intrd_zep dt span{font-size: 1.6rem;}
+    .card .intrd_zep dd{padding-bottom: 8px;}
+
+    #txt_visual .txt_readyset{font-size: 8rem;}
+    #txt_visual .finger{right: -350px; top: 0px;transform: scale(0.8,0.8);}
+    #popup .popup_wrap .popup_img img{ min-width: 350px;}
+
+    #txt_visual .txt_play{font-size: 12rem;}
+}
+
+@media(max-width:501px){
+    
+
+    #main_visual .tab_icon img{transform: scale(0.8,0.8);}
+    #main_visual .tab_icon li p{transform: scale(0.8,0.8); font-size: 1.6rem; padding: 0; display: inline; margin-top: 5px;}
+    #header .gnb li a{font-size: 1.6rem;}
+
+    #review{padding: 50px 0;}
+    #review .h2_tit h2{font-size: 4rem;}
+    #review .review_chat {min-width: 400px;}
+    #review .review_chat .chat_log dl dt span{padding: 0 10px;}
+    #review .review_chat .chat_log dl{font-size: 1rem; padding-bottom: 5px; text-align: left;}
+    #review .review_chat .chat_log dl dt{font-size: 1.2rem;}
+    #review .review_chat .chat_log dl dd{line-height: 2;}
+    #review .review_chat .chat_log dl dt span{font-size: 1.4rem;}
+
+
+    .com{transform: scale(0.8,0.8);}
+    .intrd2_txt p{font-size: 5rem;}
+    .intrd2_txt p:nth-child(1)::before{transform: scale(0.7,0.7); top: -10px;}
+    .intrd2_txt p:nth-child(3)::before{transform: scale(0.7,0.7); top: -10px;}
+
+    #popup .popup_wrap .popup_img img{ min-width: 310px;}
+    #txt_visual{padding: 0 0 100px;}
+    #txt_visual .txt_readyset{font-size: 6rem;}
+    #txt_visual .finger{right: -300px; top: -200px;transform: scale(0.6,0.6);}
+    #txt_visual .txt_play{font-size: 10rem;}
+    .opening{display: none;}
+}
+
+
